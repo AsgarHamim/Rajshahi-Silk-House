@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #f7f1e7;
+  --color-cream: #efe5d5;
+  --color-champagne: #dcc5a5;
+  --color-gold: #b48a52;
+  --color-forest: #26382d;
+  --color-charcoal: #24231f;
+  --color-brown: #76533b;
+  --color-olive: #77765a;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter Variable", Inter, system-ui, sans-serif;
+  --font-script: "Mrs Saint Delafield", cursive;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body { background: var(--color-ivory); color: var(--color-charcoal); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+.eyebrow { font-size: 0.68rem; letter-spacing: 0.28em; text-transform: uppercase; font-weight: 500; }
+
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.9s ease, transform 0.9s ease; }
+.reveal.in { opacity: 1; transform: none; }
+
+.zoom img { transition: transform 1.2s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.zoom:hover img, .zoom:focus-visible img { transform: scale(1.06); }
+.arrow { transition: transform 0.35s ease; }
+.zoom:hover .arrow, .zoom:focus-visible .arrow, .link-arrow:hover .arrow { transform: translateX(5px); }
+
+a:focus-visible, button:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 3px; }
+
+.hero-store { clip-path: polygon(0 0, 100% 0, 98.8% 100%, 0 100%); }
+.hero-factory { clip-path: polygon(2.6% 0, 100% 0, 100% 100%, 0 100%); }
+.hero-yarn { clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%); }
+
+@media (max-width: 1023px) {
+  .hero-store, .hero-factory, .hero-yarn { clip-path: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .zoom img, .arrow { transition: none; }
+}
