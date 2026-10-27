@@ -31,7 +31,7 @@ export default function Factory() {
           <span className="pointer-events-none absolute inset-y-0 left-0 hidden w-1/3 bg-gradient-to-r from-cream to-transparent lg:block" />
         </div>
         <div className="grid grid-cols-2 gap-[3px] lg:grid-cols-1 lg:pl-[3px]">
-          {[{ s: "/images/yarn-close.jpg", a: "Colourful yarn cones", l: "Premium Yarn" }, { s: "/images/fabric.jpg", a: "Finished golden silk fabric", l: "Finest Fabric" }].map((i) => (
+          {[{ s: "/images/yarn-close.jpg", a: "Colourful yarn cones", l: "Premium Yarn" }, { s: "/images/finest.webp", a: "Close-up of finished printed fabric", l: "Finest Fabric" }].map((i) => (
             <div key={i.l} className="zoom relative min-h-[180px]">
               <Image src={i.s} alt={i.a} fill sizes="(min-width:1024px) 20vw, 50vw" className="object-cover" />
               <span className="absolute inset-x-0 bottom-0 bg-forest/85 px-3 py-2 text-xs font-medium text-ivory">{i.l}</span>

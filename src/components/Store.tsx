@@ -25,9 +25,9 @@ export default function Store() {
             {areas.map((a) => <li key={a} className="flex items-center gap-2"><MapPin size={13} className="text-gold" aria-hidden />{a}</li>)}
           </ul>
           <p className="mt-2 text-[0.65rem] italic text-charcoal/50">Locations are examples, to be confirmed.</p>
-          <div className="mt-5 flex h-14 overflow-hidden" role="img" aria-label="Silk colour range">
-            {swatches.map((c) => <span key={c} className="flex-1" style={{ background: c }} />)}
-          </div>
+          <ul className="mt-5 flex h-14 overflow-hidden" aria-label="Fabric colour range">
+            {swatches.map((c) => <li key={c} className="relative flex-1"><Image src={`/images/sw-${c}.webp`} alt="" fill sizes="40px" className="object-cover" /></li>)}
+          </ul>
         </Reveal>
       </div>
     </section>

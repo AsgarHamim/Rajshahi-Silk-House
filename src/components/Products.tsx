@@ -16,7 +16,7 @@ export default function Products() {
         {products.map((p, i) => (
           <li key={p.name}>
             <Reveal delay={i * 90} className="h-full">
-              <a href="#contact" className="zoom group flex h-full flex-col border border-champagne/70 bg-ivory transition-shadow hover:shadow-[0_18px_40px_-20px_rgba(36,35,31,0.35)]">
+              <a href="#collection" className="zoom group flex h-full flex-col border border-champagne/70 bg-ivory transition-shadow hover:shadow-[0_18px_40px_-20px_rgba(36,35,31,0.35)]">
                 <span className="relative block aspect-[16/10] overflow-hidden"><Image src={p.image} alt={p.alt} fill sizes="(min-width:1024px) 25vw, 50vw" className="object-cover" /></span>
                 <span className="flex flex-1 flex-col p-5">
                   <span className="font-serif text-2xl">{p.name}</span>
