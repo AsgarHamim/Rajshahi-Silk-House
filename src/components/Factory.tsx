@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { CheckCircle2, Leaf, Users } from "lucide-react";
 import Reveal from "./Reveal";
-import { principles } from "@/data/content";
+import { factoryStrip, principles } from "@/data/content";
+import FabricStrip from "./FabricStrip";
 
 const icons = { check: CheckCircle2, users: Users, leaf: Leaf };
 
@@ -39,6 +40,7 @@ export default function Factory() {
           ))}
         </div>
       </div>
+      <FabricStrip ids={factoryStrip} className="h-20 sm:h-24" label="Finished fabrics" />
     </section>
   );
 }

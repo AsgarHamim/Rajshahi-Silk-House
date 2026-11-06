@@ -1,5 +1,7 @@
 import { Facebook, Instagram, Linkedin, MapPin, Phone, Youtube } from "lucide-react";
 import Logo from "./Logo";
+import FabricStrip from "./FabricStrip";
+import { footerStrip } from "@/data/content";
 import { contact } from "@/data/content";
 import { bulkHref } from "@/lib/contact";
 
@@ -23,6 +25,7 @@ function Loc({ title, address, map }: { title: string; address: string; map: str
 export default function Footer() {
   return (
     <footer id="contact" className="bg-forest text-ivory">
+      <FabricStrip ids={footerStrip} className="h-14 sm:h-16" label="Fabric samples" />
       <div className="mx-auto grid max-w-[1400px] gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr_1fr_auto] lg:px-12">
         <div>
           <Logo tone="light" />

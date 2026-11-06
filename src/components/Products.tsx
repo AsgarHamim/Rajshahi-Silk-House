@@ -17,7 +17,7 @@ export default function Products() {
           <li key={p.name}>
             <Reveal delay={i * 90} className="h-full">
               <a href="#collection" className="zoom group flex h-full flex-col border border-champagne/70 bg-ivory transition-shadow hover:shadow-[0_18px_40px_-20px_rgba(36,35,31,0.35)]">
-                <span className="relative block aspect-[16/10] overflow-hidden"><Image src={p.image} alt={p.alt} fill sizes="(min-width:1024px) 25vw, 50vw" className="object-cover" /></span>
+                <span className="relative block aspect-[4/3] overflow-hidden"><Image src={p.image} alt={p.alt} fill sizes="(min-width:1024px) 25vw, 50vw" className="object-cover" /></span>
                 <span className="flex flex-1 flex-col p-5">
                   <span className="font-serif text-2xl">{p.name}</span>
                   <span className="mt-2 flex-1 text-[0.8rem] leading-relaxed text-charcoal/70">{p.text}</span>

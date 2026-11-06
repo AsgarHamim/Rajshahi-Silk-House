@@ -4,6 +4,8 @@ import Reveal from "./Reveal";
 const tiles = [
   { src: "/images/yarn.jpg", alt: "Silk yarn spools arranged by colour", label: "Yarn", cls: "col-span-2 row-span-2 aspect-[4/3] sm:aspect-auto" },
   { src: "/images/yarn-close.jpg", alt: "Close-up of coloured yarn cones", label: "Threads", cls: "aspect-[4/3]" },
+  { src: "/images/sw-054.webp", alt: "Blue paisley fabric detail", label: "Weave", cls: "aspect-[4/3]" },
+  { src: "/images/sw-023.webp", alt: "Red block-printed fabric detail", label: "Print", cls: "aspect-[4/3]" },
   { src: "/images/fiber.webp", alt: "Close-up of printed fabric weave", label: "Fiber", cls: "aspect-[4/3]" },
   { src: "/images/finished.webp", alt: "Finished gold fabric weave detail", label: "Finished fabric", cls: "col-span-2 aspect-[16/7]" },
 ];

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { MapPin } from "lucide-react";
 import Reveal from "./Reveal";
 import { areas, brands, swatches } from "@/data/content";
+import FabricStrip from "./FabricStrip";
 
 export default function Store() {
   return (
@@ -16,7 +17,7 @@ export default function Store() {
           </ul>
         </Reveal>
         <Reveal delay={100}>
-          <div className="zoom relative aspect-[16/9] overflow-hidden"><Image src="/images/showroom.jpg" alt="Rajshahi Silk House showroom interior with wooden fixtures and colourful fabrics" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" /></div>
+          <div className="zoom relative aspect-[16/9] overflow-hidden"><Image src="/images/store-front.jpg" alt="Rajshahi Silk House store interior with shelves of colourful folded fabrics" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover" /></div>
         </Reveal>
         <Reveal delay={200}>
           <h3 className="font-serif text-2xl">Our Supply Areas</h3>
@@ -25,9 +26,7 @@ export default function Store() {
             {areas.map((a) => <li key={a} className="flex items-center gap-2"><MapPin size={13} className="text-gold" aria-hidden />{a}</li>)}
           </ul>
           <p className="mt-2 text-[0.65rem] italic text-charcoal/50">Locations are examples, to be confirmed.</p>
-          <ul className="mt-5 flex h-14 overflow-hidden" aria-label="Fabric colour range">
-            {swatches.map((c) => <li key={c} className="relative flex-1"><Image src={`/images/sw-${c}.webp`} alt="" fill sizes="40px" className="object-cover" /></li>)}
-          </ul>
+          <div className="mt-5"><FabricStrip ids={swatches} className="h-16" label="Fabric colour range" /></div>
         </Reveal>
       </div>
     </section>

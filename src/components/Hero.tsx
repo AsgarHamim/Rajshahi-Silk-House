@@ -22,8 +22,9 @@ export default function Hero() {
   return (
     <section id="home" aria-label="Rajshahi Silk House" className="grid grid-cols-2 gap-[3px] bg-ivory lg:h-[calc(100vh-72px)] lg:max-h-[860px] lg:min-h-[560px] lg:grid-cols-[60fr_40fr] lg:grid-rows-[56fr_44fr]">
       <div className="hero-store relative col-span-2 min-h-[470px] overflow-hidden lg:col-span-1 lg:row-span-2">
-        <Image src="/images/showroom.jpg" alt="Rajshahi Silk House showroom with wooden tables, folded silks and hanging garments" fill priority sizes="(min-width:1024px) 60vw, 100vw" className="object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/35 to-transparent" />
+        <Image src="/images/store-front.jpg" alt="Rajshahi Silk House store with shelves of folded fabrics, hanging garments and a wooden counter" fill priority sizes="(min-width:1024px) 60vw, 100vw" className="object-cover object-top" />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/55 to-charcoal/10" />
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-charcoal/70 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-center px-6 py-10 text-ivory lg:px-14">
           <p className="eyebrow">From Yarn to Timeless Fabric</p>
           <h1 className="mt-5 max-w-[11ch] font-serif text-[3.3rem] leading-[1.02] sm:text-6xl lg:text-[4.6rem]">Crafting Silk for Leading Brands</h1>

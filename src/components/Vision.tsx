@@ -15,7 +15,10 @@ export default function Vision() {
           <p className="mt-4 text-sm leading-relaxed text-charcoal/80">We aspire to create exceptionally fine muslin fabric and, one day, produce pure Moslin sarees that celebrate the extraordinary textile heritage of Bengal.</p>
           <a href="#home" className="link-arrow mt-7 inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3 text-xs text-ivory transition-colors hover:bg-brown">Our Journey <ArrowRight size={14} className="arrow" /></a>
         </Reveal>
-        <p className="-rotate-6 font-script text-5xl text-brown lg:mr-10 lg:text-6xl" aria-hidden>Pure Moslin,<br />One Day...</p>
+        <div className="flex items-center gap-10 lg:mr-6">
+          <p className="-rotate-6 whitespace-nowrap font-script text-5xl text-brown lg:text-6xl" aria-hidden>Pure Moslin,<br />One Day...</p>
+          <div className="relative hidden h-48 w-40 shrink-0 rotate-3 border-[6px] border-ivory shadow-xl xl:block"><Image src="/images/vision-fabric.webp" alt="White floral printed fabric" fill sizes="160px" className="object-cover" /></div>
+        </div>
       </div>
     </section>
   );
